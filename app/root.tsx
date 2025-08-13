@@ -2,10 +2,7 @@ import type {LinkDescriptor, LinksFunction} from "react-router";
 import {Links, Meta, Outlet, Scripts, ScrollRestoration} from "react-router";
 import "./tailwind.css";
 import Navbar from "~/components/navbar";
-import consoleEgg from "~/utils/ConsoleEgg"
-
 import React from "react";
-import {useEffect} from "react";
 
 const backgrounds: { [key: string]: string }[] = [
     {'backgrounds/close_to_me.png': '雨の音を聞くー'},
@@ -40,8 +37,14 @@ export const links: LinksFunction = () => {
 }
 
 export function Layout({children}: { children: React.ReactNode }) {
-    
-    consoleEgg()
+
+    console.log(`
+        青青子衿，悠悠我心
+        周公吐哺，天下归心
+        Lime Studio，欢迎你的加入
+        招募QQ群：https://qm.qq.com/q/sGROliaAoM
+        （备注：从网页彩蛋进入）
+    `)
     const randomIndex = Math.floor(Math.random() * backgrounds.length);
     const currentBackground = backgrounds[randomIndex]
 

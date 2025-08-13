@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 const insertAfter = (newElement: HTMLElement, targetElement: HTMLElement): void => {
     const parent = targetElement.parentNode;
     if (parent?.lastChild === targetElement) {
@@ -9,7 +7,7 @@ const insertAfter = (newElement: HTMLElement, targetElement: HTMLElement): void 
     }
 };
 
-class Api {
+export default class HardwareAPI {
     public static checkPhone(): boolean {
         const flag = navigator.userAgent.match(
             /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
@@ -62,5 +60,3 @@ class Api {
         // Implementation for getting IP address can be added here
     }
 }
-
-export default Api;

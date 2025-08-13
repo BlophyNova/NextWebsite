@@ -14,11 +14,14 @@
     "@react-router/node": "^7.0.0",
     "@react-router/serve": "^7.0.0",
     "@tailwindcss/vite": "^4.0.0-beta.8",
+    "github-markdown-css": "^5.8.1",
     "isbot": "^4.1.0",
     "motion": "^11.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router": "^7.5.0"
+    "react-markdown": "^10.1.0",
+    "react-router": "^7.5.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@react-router/dev": "^7.0.0",
